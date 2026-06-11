@@ -47,6 +47,7 @@ module "storage_account" {
 }
 
 resource "azurerm_storage_container" "this" {
+  #checkov:skip=CKV2_AZURE_21: Blob diagnostic settings (including read logging) are enabled centrally via Azure Policy.
   for_each              = var.ddog_storage_containers
   name                  = each.key
   storage_account_id    = module.storage_account.id
