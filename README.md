@@ -18,7 +18,7 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_storage_account"></a> [storage\_account](#module\_storage\_account) | github.com/schubergphilis/terraform-azure-mcaf-storage-account.git | v0.10.0 |
+| <a name="module_storage_account"></a> [storage\_account](#module\_storage\_account) | schubergphilis-ep/mcaf-storage-account/azure | 0.10.0 |
 
 ## Resources
 
