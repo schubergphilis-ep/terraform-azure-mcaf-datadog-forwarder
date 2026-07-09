@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [4.2.1](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/compare/v4.2.0...v4.2.1) (2026-07-09)
+
+
+### 🐛 Fixes
+
+* migrate MCAF module sources ([#4](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/issues/4)) ([55dfda3](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/commit/55dfda3aebf5e462027dd9e241cdb8e8260d0590))
+
 ## [4.2.0](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/compare/v4.1.2...v4.2.0) (2026-04-28)
 
 ## [4.1.2](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/compare/v4.1.1...v4.1.2) (2026-01-22)
@@ -89,4 +96,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.2](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/compare/v0.1...v0.2) (2025-03-21)
 
 ## 0.1 (2025-02-04)
-
