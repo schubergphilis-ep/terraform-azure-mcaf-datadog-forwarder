@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [4.4.0](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/compare/v4.3.0...v4.4.0) (2026-10-29)
+
+
+### 🚀 Features
+
+* Add option for additional app settings ([#6](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/issues/6)) ([bb9de32](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/commit/bb9de32294530e6f47e9aed736d533323b1a839b))
+* Added a feature flag supporting Defender for Cloud Continuous Export ([eec3b8a](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/commit/eec3b8af1b6875f7b1ad4aa3bce26a2618f7fd74))
+
+
+### 🐛 Fixes
+
+* migrate MCAF module sources ([#4](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/issues/4)) ([55dfda3](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/commit/55dfda3aebf5e462027dd9e241cdb8e8260d0590))
+* Remove app settings that get set automatically and ignore changes to them ([67b90fb](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/commit/67b90fb05cf3b8a4d47acc7d66467b6eac0df8a8))
+* Switch default_action on network_rulesets for eventhub namespace ([b05a08b](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/commit/b05a08bfe2cb7c8b8241b1e8a9a66506d10b41ea))
+
 ## [4.3.0](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/compare/v4.2.1...v4.3.0) (2026-10-29)
 
 
