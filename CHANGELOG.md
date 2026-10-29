@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [4.3.0](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/compare/v4.2.1...v4.3.0) (2026-10-29)
+
+
+### 🚀 Features
+
+* Add option for additional app settings ([#6](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/issues/6)) ([bb9de32](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/commit/bb9de32294530e6f47e9aed736d533323b1a839b))
+
 ## [4.2.1](https://github.com/schubergphilis-ep/terraform-azure-mcaf-datadog-forwarder/compare/v4.2.0...v4.2.1) (2026-07-09)
 
 
