@@ -67,6 +67,7 @@
 | <a name="input_log_analytics_workspace_id"></a> [log\_analytics\_workspace\_id](#input\_log\_analytics\_workspace\_id) | The resource id of the log analytics workspace to which application insights logs should be sent | `string` | n/a | yes |
 | <a name="input_managed_identity_name"></a> [managed\_identity\_name](#input\_managed\_identity\_name) | The name of the Managed Identity to be deployed | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The Resource Group that will be used the deployment | `string` | n/a | yes |
+| <a name="input_additional_app_settings"></a> [additional\_app\_settings](#input\_additional\_app\_settings) | Additional app settings merged into the Function App app settings, for example DD\_TAGS. Settings managed by the module take precedence. | `map(string)` | `{}` | no |
 | <a name="input_datadog_site_hostname"></a> [datadog\_site\_hostname](#input\_datadog\_site\_hostname) | Datadog site host name | `string` | `"datadoghq.eu"` | no |
 | <a name="input_key_vault"></a> [key\_vault](#input\_key\_vault) | The properties of the Key Vault to be used to store secrets | <pre>object({<br/>    name                = string<br/>    resource_group_name = string<br/>  })</pre> | `null` | no |
 | <a name="input_key_vault_secret_cmk_key_name"></a> [key\_vault\_secret\_cmk\_key\_name](#input\_key\_vault\_secret\_cmk\_key\_name) | n/a | `string` | `"cmkrsa"` | no |

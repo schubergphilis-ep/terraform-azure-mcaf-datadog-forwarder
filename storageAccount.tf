@@ -20,8 +20,8 @@ resource "azurerm_role_assignment" "sta_datadog_mid" {
 
 module "storage_account" {
   depends_on = [azurerm_role_assignment.sta_datadog_mid]
-  source  = "schubergphilis-ep/mcaf-storage-account/azure"
-  version = "0.10.0"
+  source     = "schubergphilis-ep/mcaf-storage-account/azure"
+  version    = "0.10.0"
 
   name                              = var.storage_account.name
   location                          = var.location
@@ -48,6 +48,7 @@ module "storage_account" {
 }
 
 resource "azurerm_storage_container" "this" {
+  #checkov:skip=CKV2_AZURE_21: Ensure Storage logging is enabled for Blob service for read requests. Managed by teams individually, for example with Azure Policy DeployIfNotExists policies
   for_each              = var.ddog_storage_containers
   name                  = each.key
   storage_account_id    = module.storage_account.id
