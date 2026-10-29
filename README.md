@@ -55,6 +55,7 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_additional_app_settings"></a> [additional\_app\_settings](#input\_additional\_app\_settings) | Additional app settings merged into the Function App app settings, for example DD\_TAGS. Settings managed by the module take precedence. | `map(string)` | `{}` | no |
 | <a name="input_application_insights_name"></a> [application\_insights\_name](#input\_application\_insights\_name) | The name of the Application Insights to be deployed | `string` | n/a | yes |
 | <a name="input_ddog_storage_containers"></a> [ddog\_storage\_containers](#input\_ddog\_storage\_containers) | Blob Containers to be created in the Storage Account | `set(string)` | n/a | yes |
 | <a name="input_event_hub"></a> [event\_hub](#input\_event\_hub) | The properties of the Event Hub to be deployed | <pre>object({<br/>    namespace_name     = string<br/>    sku                = optional(string, "Premium")<br/>    capacity           = optional(number, 2)<br/>    hub_name           = string<br/>    authorization_rule = string<br/>    consumer_group     = string<br/>  })</pre> | n/a | yes |

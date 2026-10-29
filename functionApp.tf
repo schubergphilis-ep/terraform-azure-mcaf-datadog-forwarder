@@ -70,7 +70,7 @@ resource "azurerm_linux_function_app" "this" {
     identity_ids = [azurerm_user_assigned_identity.func_datadog_mid.id]
   }
   key_vault_reference_identity_id = azurerm_user_assigned_identity.func_datadog_mid.id
-  app_settings = {
+  app_settings = merge(var.additional_app_settings, {
     "AzureWebJobsStorage__blobServiceUri" = module.storage_account.endpoints.primary_blob_endpoint
     "AzureWebJobsStorage__clientId"       = azurerm_user_assigned_identity.func_datadog_mid.client_id
     "AzureWebJobsStorage__credential"     = "managedidentity"
@@ -81,7 +81,7 @@ resource "azurerm_linux_function_app" "this" {
     "EVH__CONSUMERGROUP"                  = "${var.event_hub.consumer_group}-fnc"
     "DD_SITE"                             = var.datadog_site_hostname
     "DD_API_KEY"                          = "@Microsoft.KeyVault(SecretUri=${data.azurerm_key_vault_secret.datadog_api_key.id})"
-  }
+  })
   site_config {
     always_on                              = var.function_app.always_on
     http2_enabled                          = true

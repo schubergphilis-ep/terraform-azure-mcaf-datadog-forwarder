@@ -135,3 +135,9 @@ variable "log_analytics_workspace_id" {
   type        = string
   description = "The resource id of the log analytics workspace to which application insights logs should be sent"
 }
+
+variable "additional_app_settings" {
+  type        = map(string)
+  description = "Additional app settings merged into the Function App app settings, for example DD_TAGS. Settings managed by the module take precedence."
+  default     = {}
+}
