@@ -20,8 +20,8 @@ resource "azurerm_role_assignment" "sta_datadog_mid" {
 
 module "storage_account" {
   depends_on = [azurerm_role_assignment.sta_datadog_mid]
-  source  = "schubergphilis-ep/mcaf-storage-account/azure"
-  version = "0.10.0"
+  source     = "schubergphilis-ep/mcaf-storage-account/azure"
+  version    = "0.10.0"
 
   name                              = var.storage_account.name
   location                          = var.location
